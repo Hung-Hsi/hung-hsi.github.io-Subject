@@ -15,13 +15,13 @@
     }
 
     main {
-        .future {
+        #future {
             .banner {
                 background: no-repeat center/cover url(../img/bgi.jpg);
                 //  opacity: .8;
                 .d-bg{
                     border-radius: 20px;
-                    background-color: rgba(158, 146, 146, 0.2);
+                    background-color: rgba(158, 146, 146, 0.25);
                 }
             }
         }

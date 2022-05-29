@@ -13,9 +13,9 @@
     margin: 0;
     padding: 0;
     font-size: 15px; }
-  * main .future .banner {
+  * main #future .banner {
     background: no-repeat center/cover url(../img/bgi.jpg); }
-    * main .future .banner .d-bg {
+    * main #future .banner .d-bg {
       border-radius: 20px;
-      background-color: rgba(158, 146, 146, 0.2); }
+      background-color: rgba(158, 146, 146, 0.25); }
 /*# sourceMappingURL=index.css.map */
