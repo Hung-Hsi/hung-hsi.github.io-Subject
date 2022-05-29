@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  min-height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 157, 157, 0.281),
+    rgba(145, 145, 255, 0.288)
+  );
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  position: relative;
+  #map {
+    position: fixed;
+    top: 0px;
+    left: -100px;
+  }
+
+  .wx_btn {
+    height: 100vh;
+    position: fixed;
+    top: 58vh;
+    left: 360px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    button {
+      width: 35px;
+      //   height: 10%;
+      margin: 1vh 0;
+      padding: 10px 5px;
+      box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      border: none;
+      background-color: rgb(243, 234, 149);
+      border-radius: 5px;
+    }
+  }
+  .card-region {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 40px 40px 40px 400px;
+    // margin-left: 400px;
+
+    .single-card {
+      // border: 1px none #000;
+      box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      width: 150px;
+      padding: 10px;
+      height: 280px;
+      min-height: 200px;
+      margin: 5px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        text-align: center;
+      }
+      img {
+        // width: 90px;
+        height: 120px;
+        margin: -30px;
+      }
+    }
+  }
+}

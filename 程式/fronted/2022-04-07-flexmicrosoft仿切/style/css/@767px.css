@@ -1,0 +1,56 @@
+/* banner & img 文字往下掉且置中 */
+/* product 變直式清單 */
+/* footer寬度調整 */
+@media screen and (max-width:767px){
+    .text,.text1 {
+        width: 100%;
+        position: unset;
+        transform: unset;
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: -10px auto 0 ;
+        padding: 80px 10%;
+        background-color: #e6e6e6;
+    }
+    .content{
+        width: 100%;
+    }
+    .bnt,.bnt1{
+       margin: 0 auto;
+       background-color: black;
+       color: white;
+
+    }
+    .pd{
+        display: block;
+        height: 146px;
+        
+    }
+    .wd{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+    .pd li{
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+    }    
+    .pd li a{
+        /* display: inline-block; */
+        display: flex;
+        width: 200px;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .pd img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+
+} 

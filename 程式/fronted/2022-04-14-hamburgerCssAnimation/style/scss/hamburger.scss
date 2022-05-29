@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.box {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    border: 20px solid #825;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+
+    .line {
+        width: 80%;
+        height: 50px;
+        // border: 1px solid #000;
+        border-radius: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s;
+    }
+    .line-half{
+        width: 44%;
+        height: 50px;
+        // border: 1px solid #000;
+        // border-radius: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s;
+    }
+    .line1 {
+        background-color: blue;
+        top: 25%;
+    }
+
+    .line2-1 {
+        border-radius: 50px;
+        background-color: rgb(142, 112, 170);
+        top: 50%;
+        left: 32%;
+        transition: 1.5s;
+    }
+    .line2-2 {
+        border-radius: 50px;
+        background-color: blueviolet;
+        top: 50%;
+        left: 68%;
+        transition: 1.5s;
+    }
+    
+    .line3 {
+        background-color: violet;
+        top: 75%;
+    }
+
+    &:hover {
+        .line1 {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(405deg);
+        }
+
+        // .line2 {
+        //     // top: 50%;
+        //     // left: -100%;
+        //     transform: translate(-50%, -50%) rotate(-405deg);
+        // }
+        .line2-1 {
+            top: 38%;
+            left: 62%;
+            transform: translate(-50%, -50%) rotate(315deg);
+        }
+        .line2-2 {
+            top: 62%;
+            left: 38%;
+            transform: translate(-50%, -50%) rotate(-405deg);
+        }
+
+        .line3 {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-405deg);
+        }
+    }
+}
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+    border: 20px solid #000;
+    position: relative;
+    overflow: hidden;
+
+    // border-radius: 50%;
+    .line {
+        width: 80%;
+        height: 50px;
+        // border: 1px solid #000;
+        border-radius: 50px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        // transition: 1s;
+    }
+
+    .line4 {
+        background-color: rgb(255, 0, 60);
+        top: 25%;
+        transition-property: top, transform;
+        transition-delay: .5s, 0s, 0s;
+        transition-duration: .5s, .5s, .5s;
+    }
+
+    .line5 {
+        background-color: rgb(102, 175, 105);
+        top: 50%;
+        transition: .5s;
+    }
+
+    .line6 {
+        background-color: rgb(245, 255, 99);
+        top: 75%;
+        transition-property: top, transform;
+        transition-delay: .5s, 0s, 0s;
+        transition-duration: .5s, .5s, .5s;
+    }
+
+    &:hover {
+        .line4 {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition-property: top, transform;
+            transition-delay: 0s, .5s, .5s;
+            transition-duration: .5s, .5s, .5s;
+        }
+
+        .line5 {
+            // top: 50%;
+            left: -100%;
+            transition: 1s;
+        }
+
+        .line6 {
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            transition-property: top, transform;
+            transition-delay: 0s, .5s, .5s;
+            transition-duration: .5s, .5s, .5s;
+        }
+    }
+}
+
+.box2 {
+    width: 1000px;
+    height: 500px;
+    margin: 0px auto;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+
+    // border-radius: 50%;
+    .line {
+        width: 50px;
+        height: 25%;
+        border: 1px solid #000;
+        position: absolute;
+        left: 0;
+        transition: 2s;
+
+    }
+
+    .line7 {
+        top: 0;
+        background-color: rgb(156, 108, 119);
+        transition-timing-function: ease;
+    }
+    
+    .line8 {
+        top: 25%;
+        background-color: rgb(155, 174, 156);
+        transition-timing-function:ease-in;
+    }
+    
+    .line9 {
+        top: 50%;
+        background-color: rgb(141, 143, 122);
+        transition-timing-function:ease-out;
+    }
+    
+    .line10 {
+        top: 75%;
+        background-color: rgb(157, 157, 157);
+        transition-timing-function:ease-in-out;
+    }
+
+    &:hover {
+        .line{
+            left: calc(100% - 50px);
+        }
+    }
+}

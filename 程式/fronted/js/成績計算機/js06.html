@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="chinese" type="number">
+    <input id="english" type="number">
+    <input id="math" type="number">
+    <button id="calc">顯示平均分數及等級</button>
+    <div id="result"></div>
+    <script>
+        // 任務
+        // 國文，英文，數學三科成績輸入框
+        var num1 = document.querySelector('#chinese')
+        var num2 = document.querySelector('#english')
+        var num3 = document.querySelector('#math')
+        var calc = document.querySelector('#calc')
+        var result = document.querySelector('#result')
+
+        console.log(num1, num2, num3, result);
+
+        // 按計算按鈕取得成績計算平均值
+        calc.addEventListener('click', function () {
+            console.log('點他');
+            var num1_d = num1.value * 1;
+            var num2_d = num2.value * 1;
+            var num3_d = num3.value * 1;
+
+            console.log(num1_d, num2_d, num3_d);
+
+            var sum = (num1_d + num2_d + num3_d);
+            var average = sum / 3;
+
+            // 判斷是否及格
+            // 90~100分以上(含90) 等級 A
+            // 80~90 (含80)=> 等級 B
+            // 70~80 (含70)=> 等級 C
+            // 60~70 (含60)=> 等級 D
+            // 小於60不及格
+            console.log(average);
+
+            // if (average >= 90) {
+            //     console.log('SS1',"等級 A");
+            //     result.innerHTML = average + "等級 A"
+            // } else if (average >= 80) {
+            //     console.log("等級 B");
+            //     result.innerHTML = average + "等級 B"
+            // } else if (average >= 70) {
+            //     console.log("等級 C");
+            //     result.innerHTML = average + "等級 C"
+            // } else if (average >= 60) {
+            //     console.log("等級 D");
+            //     result.innerHTML = average + "等級 D"
+            // } else {
+            //     console.log("不及格");
+            //     result.innerHTML = average + "不及格"
+            // }
+
+            var classNo = ""
+
+            if (average >= 90) {
+                console.log('SS1',"等級 A");
+                classNo = "等級 A"
+            } else if (average >= 80) {
+                console.log("等級 B");
+                classNo = "等級 A"
+            } else if (average >= 70) {
+                console.log("等級 C");
+                classNo = "等級 A"
+            } else if (average >= 60) {
+                console.log("等級 D");
+                classNo = "等級 D"
+            } else {
+                console.log("不及格");
+                classNo = "不及格"
+            }
+            
+            result.innerHTML = average +','+ classNo
+
+        })
+
+
+    </script>
+</body>
+
+</html>

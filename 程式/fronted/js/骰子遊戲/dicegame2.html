@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .bigBox {
+            display: flex;
+        }
+
+        /* .dice {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #000;
+        } */
+
+        .roll {
+            width: 80px;
+            height: 40px;
+            margin: 10px;
+        }
+
+        .process {
+            width: 366px;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 15px;
+            text-align: center;
+            margin-right: 80px;
+        }
+
+        .total {
+            display: flex;
+            margin: 20px 100px 20px 0;
+        }
+
+        .box {
+            width: 120px;
+            margin: 1px 2px 1px 0;
+        }
+        img{
+            width: 130px;
+            /* height: 130px; */
+        }
+        .fail{
+            margin-top: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigBox">
+        <div class="dice dice1"><img src="./style/img/1.jpg" alt=""></div>
+        <div class="dice dice2"><img src="./style/img/1.jpg" alt=""></div>
+        <div class="dice dice3"><img src="./style/img/1.jpg" alt=""></div>
+        <button class="roll">roll</button>
+    </div>
+    <div class="process"></div>
+    <div class="total">
+        <span> 總次數 :</span>
+        <div class="times">__</div>
+        <span>次</span>
+    </div>
+    <script>
+        let dice1 = document.querySelector('.dice1');
+        let dice2 = document.querySelector('.dice2');
+        let dice3 = document.querySelector('.dice3');
+        let roll = document.querySelector('.roll');
+        let process = document.querySelector('.process');
+        let times = document.querySelector('.times');
+        i = 1;
+        let diceValue1;
+        let diceValue2;
+        let diceValue3;
+
+
+
+        roll.addEventListener('click', function () {
+            dice1.innerHTML = '';
+            dice2.innerHTML = '';
+            dice3.innerHTML = '';
+            process.innerHTML = '';
+            i = '';
+            do {
+                diceValue1 = Math.floor(Math.random() * 6) + 1;
+                diceValue2 = Math.floor(Math.random() * 6) + 1;
+                diceValue3 = Math.floor(Math.random() * 6) + 1;
+                if (i == 10) {
+                    alert('沒指望了...還來嗎?')
+                    break;
+                }
+
+                i++;
+                times.innerHTML = i;
+
+                process.innerHTML += `<div class="box"><img src="./style/img/0${diceValue1}.png" alt=""></div><div class="box"><img src="./style/img/0${diceValue2}.png" alt=""></div><div class="box"><img src="./style/img/0${diceValue3}.png" alt=""></div><br>`;
+
+                if (diceValue1 == diceValue2 && diceValue2 == diceValue3) {
+                    alert('恭喜老爺，賀喜夫人~')
+                    dice1.innerHTML = `<img src="./style/img/${diceValue1}.jpg" alt="">`;
+                    dice2.innerHTML = `<img src="./style/img/${diceValue2}.jpg" alt="">`;
+                    dice3.innerHTML = `<img src="./style/img/${diceValue3}.jpg" alt="">`;
+                }else{
+                    dice1.innerHTML = `<img class="fail" src="./style/img/fail.jpg" alt="">`;
+                    dice2.innerHTML = `<img class="fail" src="./style/img/fail.jpg" alt="">`;
+                    dice3.innerHTML = `<img class="fail" src="./style/img/fail.jpg" alt="">`;
+                }
+                console.log('=>', dice1, dice2, dice3);
+                console.log(process.innerHTML);
+            } while (diceValue1 != diceValue2 || diceValue1 != diceValue3 || diceValue2 != diceValue3)
+            console.log("第 " + i + " 次", dice1, dice2, dice3);
+
+        })
+
+    </script>
+</body>
+
+</html>

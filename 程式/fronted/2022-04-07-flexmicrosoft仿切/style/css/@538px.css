@@ -1,0 +1,10 @@
+/* 卡片變單張->100% */
+/* footer 變直立排列 */
+@media screen and (max-width:538px){
+    .card .cd{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+}

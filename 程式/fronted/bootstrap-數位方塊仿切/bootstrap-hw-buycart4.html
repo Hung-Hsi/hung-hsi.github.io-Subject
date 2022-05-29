@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px;
+            }
+        }
+
+        .bg-grey {
+            background-color: rgb(236, 236, 236);
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="Navbar">
+        <nav class="navbar navbar-expand-md navbar-light bg-linavbar-light py-0">
+            <div class="container-lg">
+                <a class="navbar-brand" href="./bootstrap-hw-index.html">
+                    <div class="logoBg">
+                        <svg class="logo" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 131.67 74.82" width="131.67" height="74.82">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #1a2447;
+                                    }
+                                </style>
+                            </defs>
+                            <title>資產 1</title>
+                            <g id="圖層_2" data-name="圖層 2">
+                                <g id="圖層_1-2" data-name="圖層 1">
+                                    <path class="cls-1"
+                                        d="M31.52,0,51.79,11.7A22.51,22.51,0,0,1,63,31.18V50.53L38.54,36.39v-4l21,12.11V33.21A22.5,22.5,0,0,0,48.28,13.73L35,6.08V74.82L0,54.59V18.2l16.76,9.67A22.5,22.5,0,0,1,28,47.35V60.91l-3.51-2V49.38A22.5,22.5,0,0,0,13.25,29.9L3.51,24.28V52.56l28,16.17Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M51.89,74.36A24,24,0,0,0,49.1,73a24.32,24.32,0,0,1-6.24,1.59,3.9,3.9,0,0,0-.8-1.19,29.42,29.42,0,0,0,5.1-1.14c-1.09-.39-2.21-.73-3.25-1A15.24,15.24,0,0,0,45,70.05l-2.34.12-.16-1.31c1,0,2.18-.08,3.48-.12a16,16,0,0,0,.91-1.43H43.42V64h4.07v-.69H44V61.13H42.44V59.76H44v-2h3.47V56.46H49.1v1.32h3.68v2h1.53v1.37H52.78v2.13H49.1V64h4.19v3.36H48.74c-.26.45-.53.89-.82,1.35l3-.14v-.83h1.65v.75l.93,0,0,1.21-1.05.06a4.1,4.1,0,0,1-1.78,2.46c1,.42,1.87.84,2.56,1.18Zm-6.76-8.22h2.36v-1H45.13Zm.6-7.15v.87h1.76V59Zm1.76,3v-1H45.73v1ZM47,70a8,8,0,0,1-.56.71c.83.24,1.72.54,2.54.84a3.76,3.76,0,0,0,1.74-1.73ZM49.1,59v.87H51V59ZM51,62v-1H49.1v1ZM49.1,65.14v1h2.38v-1Zm12.06-3.33a24.3,24.3,0,0,1-1.94,7.52,9.53,9.53,0,0,0,3.65,3.86,4.92,4.92,0,0,0-1.2,1.29A10.65,10.65,0,0,1,58.28,71a12.09,12.09,0,0,1-4,3.82,5.5,5.5,0,0,0-1.07-1.37,10.23,10.23,0,0,0,4.15-4.2,23.13,23.13,0,0,1-1.5-4.68,13.52,13.52,0,0,1-1,1.86,9.9,9.9,0,0,0-1.36-1.15c1.49-2.08,2.29-5.36,2.74-8.7l1.76.2c-.18,1.15-.38,2.31-.65,3.4h5.35v1.63Zm-4.24,0a27.67,27.67,0,0,0,1.34,5.38,25.7,25.7,0,0,0,1.14-5.38Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M72.37,57.08a29.94,29.94,0,0,1-2.16,4.11V74.66h-2.1V64.09a16.58,16.58,0,0,1-1.83,2,11.89,11.89,0,0,0-1.16-1.87,21.41,21.41,0,0,0,5.29-7.65Zm13,15v1.77H71.54V72.11h7.74a67.22,67.22,0,0,0,2-9.55l2.16.32c-.6,3-1.44,6.69-2.25,9.23Zm-.83-10.38H72.43V59.94H84.58Zm-9.34,9.63a71.55,71.55,0,0,0-1.4-8.3l1.85-.38a69.25,69.25,0,0,1,1.6,8.14Zm2.54-11.52a17.77,17.77,0,0,0-1-3.14l2-.43a23.89,23.89,0,0,1,1.11,3Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M96.68,61.57c-.06.93-.13,1.89-.27,2.82h9.48a6.74,6.74,0,0,1-.09.83c-.43,5.48-.85,7.67-1.74,8.48a3.19,3.19,0,0,1-2.12.78,34.86,34.86,0,0,1-3.76,0,3.52,3.52,0,0,0-.74-1.81c1.58.12,3.1.14,3.72.14a1.71,1.71,0,0,0,1.07-.24c.63-.46,1-2.3,1.38-6.35H96.1a11.41,11.41,0,0,1-6.46,8.6,5.75,5.75,0,0,0-1.52-1.51c5.53-2.51,6-7.33,6.27-11.7H88.55V59.76h9.54A19.68,19.68,0,0,0,96.68,57l2-.67a18.59,18.59,0,0,1,1.58,2.88l-1.49.57H108v1.81Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M118.28,69.71c-2.36.9-4.88,1.81-6.87,2.5l-.64-1.88c.8-.22,1.78-.54,2.87-.9V63h-2.52V61.23h2.52V56.72h1.94v4.51h2.21V63h-2.21v5.84l2.3-.78ZM129.36,73c.53,0,.66-.22.73-1.43a5.1,5.1,0,0,0,1.58.61c-.18,1.81-.71,2.31-2.16,2.31h-2.87c-2,0-2.43-.46-2.43-2.13v-5.7H123c-.31,3.62-1.14,6.48-4.66,8.11a5.12,5.12,0,0,0-1.2-1.39c3.07-1.3,3.72-3.72,4-6.72h-2.45V58.45h2.27a19.66,19.66,0,0,0,.69-2l2.18.25a16.58,16.58,0,0,1-.89,1.79h7.47v8.18H126v5.68c0,.58.13.66.87.66Zm-8.9-11.16h3.1V59.94h-3.1Zm0,3.33h3.1v-1.9h-3.1Zm8-5.2h-3.07v1.87h3.07Zm0,3.3h-3.07v1.9h3.07Zm1.81,8.4c-.07-.18-.13-.4-.22-.6a19,19,0,0,0-3.61.5,7,7,0,0,0-.47-1.13,1,1,0,0,0,.64-.58,9.37,9.37,0,0,0,1.19-2.78l1.31.36a17,17,0,0,1-1.45,2.86l2-.16c-.24-.52-.49-1-.73-1.49l1-.34a21.36,21.36,0,0,1,1.42,2.92Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M70.06,43.16h2.28c2.69,0,4.23,1.25,4.23,3.66S75,50.53,72.41,50.53H70.06Zm2.18,6.42c1.89,0,2.9-.93,2.9-2.76s-1-2.72-2.9-2.72h-.79v5.48Z">
+                                    </path>
+                                    <path class="cls-1" d="M79,43.16h1.39v7.37H79Z"></path>
+                                    <path class="cls-1"
+                                        d="M82.8,46.87c0-2.32,1.76-3.71,4.09-3.71a3.94,3.94,0,0,1,2.61.9l-.75.71a2.7,2.7,0,0,0-1.82-.63A2.71,2.71,0,1,0,87,49.56a2.57,2.57,0,0,0,1.39-.35V47.54H86.64v-.92h3V49.7a4.49,4.49,0,0,1-2.78.83C84.5,50.53,82.8,49.2,82.8,46.87Z">
+                                    </path>
+                                    <path class="cls-1" d="M92.23,43.16h1.38v7.37H92.23Z"></path>
+                                    <path class="cls-1"
+                                        d="M99.79,43.16h2.66c2,0,3.35.56,3.35,2.22s-1.4,2.36-3.31,2.36h-1.32v2.79H99.79Zm2.57,3.65c1.41,0,2.08-.45,2.08-1.43s-.73-1.29-2.13-1.29h-1.14v2.72Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M111.48,48.43h-3l-.75,2.1h-1.41l2.91-7.37h1.6l2.91,7.37h-1.47Zm-.33-.91-.35-1c-.29-.8-.56-1.63-.83-2.46h0q-.37,1.26-.81,2.46l-.36,1Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M114.83,46.87a3.66,3.66,0,0,1,4-3.71,3.76,3.76,0,0,1,2.49.9l-.75.71a2.61,2.61,0,0,0-1.71-.63,2.47,2.47,0,0,0-2.57,2.69,2.45,2.45,0,0,0,2.53,2.73,2.78,2.78,0,0,0,1.94-.76l.74.71a3.8,3.8,0,0,1-2.73,1A3.58,3.58,0,0,1,114.83,46.87Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M123.61,43.16H125v3.49h0l3.34-3.49h1.53L127.19,46l3.17,4.52h-1.54l-2.48-3.6L125,48.31v2.22h-1.38Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6" width="24" height="24">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd" fill="#374151"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd" style="display: none;" fill="#374151"></path>
+                    </svg>
+                    <!-- <span class=""></span> -->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav nav justify-content">
+                        <li class="nav-item text-center mx-3">
+                            <a class="nav-link active" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item text-center mx-3">
+                            <a class="nav-link active" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item text-center mx-3">
+                            <a class="nav-link active" href="#">About</a>
+                        </li>
+                        <li class="nav-item text-center mx-3">
+                            <a class="nav-link active" href="#">contact</a>
+                        </li>
+                        <div class="d-flex justify-content-center">
+                            <li class="nav-item text-center mx-2">
+                                <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <div class="dropdown nav-item text-center mx-2">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="./bootstrap-hw-login.html">Log in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <main style="padding-top: 90px;">
+            <div class="bg-light">
+                <div class="py-5">
+                    <div class="container bg-grey rounded-lg shadow">
+                        <div class="p-4 bg-grey">
+                            <h1 class="h1">購物車</h1>
+                            <div class="w-100 d-flex py-3">
+                                <div class="w-25">
+                                    <div class="position-relative mb-2">
+                                        <div class="rounded-circle text-white bg-success d-flex align-items-center justify-content-center mx-auto"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="text-center w-100">1</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">確認購物車</div>
+                                </div>
+                                <div class="w-25">
+                                    <div class="position-relative mb-2">
+                                        <div class="position-absolute d-flex-align-items-center align-content-center"
+                                            style="width: calc(100% - 2.5rem - 1rem);top: 50%;transform: translate(-50%, -50%);">
+                                            <div class="w-100 bg-secondary rounded align-items-center col px-0">
+                                                <div class="bg-success py-1 rounded" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rounded-circle text-white bg-success d-flex align-items-center justify-content-center mx-auto"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="text-center w-100">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">付款與運送方式</div>
+                                </div>
+                                <div class="w-25">
+                                    <div class="position-relative mb-2">
+                                        <div class="position-absolute d-flex-align-items-center align-content-center"
+                                            style="width: calc(100% - 2.5rem - 1rem);top: 50%;transform: translate(-50%, -50%);">
+                                            <div class="w-100 bg-secondary rounded align-items-center col px-0">
+                                                <div class="bg-success py-1 rounded" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rounded-circle text-white bg-success d-flex align-items-center justify-content-center mx-auto"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="text-center w-100">3</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">填寫資料</div>
+                                </div>
+                                <div class="w-25">
+                                    <div class="position-relative mb-2">
+                                        <div class="position-absolute d-flex-align-items-center align-content-center"
+                                            style="width: calc(100% - 2.5rem - 1rem);top: 50%;transform: translate(-50%, -50%);">
+                                            <div class="w-100 bg-secondary rounded align-items-center col px-0">
+                                                <div class="bg-success py-1 rounded" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="rounded-circle text-white bg-success d-flex align-items-center justify-content-center mx-auto"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="text-center w-100">4</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">完成訂購</div>
+                                </div>
+                            </div>
+                            <div class="border-top w-100 pt-4">
+                                <h1 class="w-full text-center text-5xl font-bold">訂單成立</h1>
+                                <span class="text-gray-700 text-2xl">訂單明細</span>
+                                <div class="row mt-4 pt-4 ">
+                                    <div class="col-6 d-flex justify-content-start align-items-center">
+                                        <img src="./style/img/EEguU02.jpg" width="60px" height="60px"
+                                            class="rounded-circle ">
+                                        <div class="ml-3">
+                                            <span class=" font-medium">Chicken momo</span>
+                                            <br>
+                                            <span class="text-xs text-secondary small text-gray-400">#41551</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end align-items-center">
+                                        <span class="pr-sm-2rem text-sm font-medium">x1</span>
+                                        <span class="pr-sm-2rem"> <span class="text-xs font-medium">$10.50</span>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 pt-4 border-top ">
+                                    <div class="col-6 d-flex justify-content-start align-items-center">
+                                        <img src="./style/img/Uv2Yqzo.jpg" width="60px" height="60px"
+                                            class="rounded-circle ">
+                                        <div class="ml-3">
+                                            <span class=" font-medium">Spicy Mexican potatoes</span>
+                                            <br>
+                                            <span class="text-xs text-secondary small text-gray-400">#66999</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end align-items-center">
+                                        <span class="pr-sm-2rem text-sm font-medium">x1</span>
+                                        <span class="pr-sm-2rem text-xs font-medium">$10.50</span>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4 pt-4 border-top ">
+                                    <div class="col-6 d-flex justify-content-start align-items-center">
+                                        <img src="./style/img/xbTAITF.jpg" width="60px" height="60px"
+                                            class="rounded-circle ">
+                                        <div class="ml-3">
+                                            <span class=" font-medium">Breakfast</span>
+                                            <br>
+                                            <span class="text-xs text-secondary small text-gray-400">#86577</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end align-items-center">
+                                        <span class="pr-sm-2rem text-sm font-medium">x1</span>
+                                        <span class="pr-sm-2rem text-xs font-medium">$10.50</span>
+                                    </div>
+                                </div>
+
+                                <div class="max-w-100 py-4">
+                                    <span class="text-gray-700 text-2xl">寄送資料</span>
+                                    <div class="mt-2 pt-4 ">
+                                        <label class="text-xl px-1 py-1" for="cus_name">姓名</label>
+                                        <span class="text-xl w-100 px-1 py-1">王小明</span>
+                                    </div>
+                                    <div class="mt-2 pt-4 ">
+                                        <label class="text-xl px-1 py-1" for="cus_tel">電話</label>
+                                        <span class="text-xl w-100 px-1 py-1">0912345678</span>
+                                    </div>
+                                    <div class="mt-2 pt-4 ">
+                                        <label class="text-xl px-1 py-1" for="cus_email">Email</label>
+                                        <span class="text-xl w-100 px-1 py-1">abc123@gmail.com</span>
+                                    </div>
+                                    <div class="mt-2 pt-4 ">
+                                        <label class="text-xl px-1 py-1" for="cus_address">地址</label>
+                                        <span class="text-xl w-100 px-1 py-1">409 台中市豐原區中山路1號</span>
+                                    </div>
+                                </div>
+
+                                <div class=" mt-4 pt-4 border-top ">
+                                    <div class="ml-auto w-25  d-flex align-items-center">
+                                        <span class="text-sm font-medium text-gray-400 mr-2  ">數量:</span>
+                                        <span class="text-lg font-bold text-gray-800 ml-auto ">3</span>
+                                    </div>
+                                    <div class="ml-auto w-25  d-flex align-items-center">
+                                        <span class="text-sm font-medium text-gray-400 mr-2">小計:</span>
+                                        <span class="text-lg font-bold text-gray-800 ml-auto  "> $24.90</span>
+                                    </div>
+                                    <div class="ml-auto w-25  d-flex  align-items-center">
+                                        <span class="text-sm font-medium text-gray-400 mr-2">運費:</span>
+                                        <span class="text-lg font-bold text-gray-800 ml-auto "> $24.90</span>
+                                    </div>
+                                    <div class="ml-auto w-25  d-flex  align-items-center">
+                                        <span class="text-sm font-medium text-gray-400 mr-2">總計:</span>
+                                        <span class="text-lg font-bold text-gray-800 ml-auto "> $24.90</span>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="mt-4 pt-4 border-top  d-flex flex-column  align-items-center flex-sm-row justify-content-sm-end">
+                                    <button class="h-12  btn btn-primary py-2 px-5"
+                                        onclick="location.href='./bootstrap-hw-index.html'">返回首頁</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+    <section class="mt-5">
+        <footer class="container-xl">
+            <div class="row px-4 justify-content-md-between justify-content-sm-center">
+                <div class="col-5 col-md-4 col-lg-3 text-center align-self-center">
+                    <h4 class="text-md-left">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="w-10 h-10 text-white"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: #162446;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                            </defs>
+                            <title>資產 2</title>
+                            <g id="圖層_2" data-name="圖層 2">
+                                <g id="圖層_1-2" data-name="圖層 1">
+                                    <circle class="cls-1" cx="20" cy="20" r="20" fill="#162446"></circle>
+                                    <path class="cls-2"
+                                        d="M20,7l7.13,4.11a7.91,7.91,0,0,1,3.95,6.84v6.8l-8.61-5V18.32l7.37,4.26V18.63a7.89,7.89,0,0,0-3.95-6.85L21.28,9.1V33.25L9,26.14V13.35l5.89,3.4a7.91,7.91,0,0,1,3.95,6.85v4.76l-1.23-.71V24.31a7.92,7.92,0,0,0-4-6.85l-3.42-2v9.94L20,31.11Z"
+                                        fill="#FFFFFF"></path>
+                                </g>
+                            </g>
+                        </svg>
+                        數位方塊
+                    </h4>
+                    <p class="text-md-left">Air plant banjo lyft occupy retro adaptogen indego</p>
+                </div>
+                <div class="row col-md-7 col-lg-9">
+                    <div class="col-lg-3  col-md-6 text-center">
+                        <h6 class="">CATEGORIES</h6>
+                        <br>
+                        <p>First Link</p>
+                        <p>Second Link</p>
+                        <p>Third Link</p>
+                        <p>Fourth Link</p>
+                    </div>
+                    <div class="col-lg-3  col-md-6 text-center">
+                        <h6 class="">CATEGORIES</h6>
+                        <br>
+                        <p>First Link</p>
+                        <p>Second Link</p>
+                        <p>Third Link</p>
+                        <p>Fourth Link</p>
+                    </div>
+                    <div class="col-lg-3  col-md-6 text-center">
+                        <h6 class="">CATEGORIES</h6>
+                        <br>
+                        <p>First Link</p>
+                        <p>Second Link</p>
+                        <p>Third Link</p>
+                        <p>Fourth Link</p>
+                    </div>
+                    <div class="col-lg-3  col-md-6 text-center">
+                        <h6 class="">CATEGORIES</h6>
+                        <br>
+                        <p>First Link</p>
+                        <p>Second Link</p>
+                        <p>Third Link</p>
+                        <p>Fourth Link</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3 bg-light">
+                <div class="col-sm-6 text-center text-sm-left">© 2020 Tailblocks — @knyttneve</div>
+                <div class="col-sm-6 text-center text-sm-right">
+                    <svg class="mx-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="#6B7280"
+                            stroke-width="2px"></path>
+                    </svg>
+                    <svg class="mx-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24" width="24" height="24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                            fill="#6B7280" stroke-width="2px">
+                        </path>
+                    </svg>
+                    <svg class="mx-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24" width="24" height="24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="#6B7280" fill="none"
+                            stroke-width="2px"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" stroke="#6B7280" fill="none"
+                            stroke-width="2px"></path>
+                    </svg>
+                    <svg class="mx-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-="" class="w-5 h-5" viewBox="0 0 24 24" width="24" height="24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                            fill="#6B7280" stroke-width="0px"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none" fill="#6B7280" stroke-width="0px"></circle>
+                    </svg>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 157, 157, 0.281)), to(rgba(145, 145, 255, 0.288)));
+  background: linear-gradient(90deg, rgba(255, 157, 157, 0.281), rgba(145, 145, 255, 0.288));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+  .container #map {
+    position: fixed;
+    top: 0px;
+    left: -100px; }
+  .container .wx_btn {
+    height: 100vh;
+    position: fixed;
+    top: 58vh;
+    left: 360px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 1; }
+    .container .wx_btn button {
+      width: 35px;
+      margin: 1vh 0;
+      padding: 10px 5px;
+      -webkit-box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+              box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      border: none;
+      background-color: #f3ea95;
+      border-radius: 5px; }
+  .container .card-region {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    padding: 40px 40px 40px 400px; }
+    .container .card-region .single-card {
+      -webkit-box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+              box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      width: 150px;
+      padding: 10px;
+      height: 280px;
+      min-height: 200px;
+      margin: 5px;
+      border-radius: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .container .card-region .single-card div {
+        text-align: center; }
+      .container .card-region .single-card img {
+        height: 120px;
+        margin: -30px; }
+/*# sourceMappingURL=fetch_weatherAPI.css.map */

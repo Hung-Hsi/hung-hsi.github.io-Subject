@@ -1,0 +1,60 @@
+/* sign-in 搜尋、購物車、登入變縮圖 */
+/* 卡片變兩張->50% */
+/* footer->3欄*2排 */
+@media screen and (max-width: 1082px) {
+  .microsoft-list {
+    width: calc(97%);
+    right: unset;
+    left: 50%;
+    transform: translateX(-55%);
+  }
+  .container,
+  .container1 {
+    max-width: calc(100vw - 17px);
+  }
+  .container1 {
+    padding: 0 3%;
+  }
+  .container {
+    padding: 0%;
+  }
+  section:not(.banner, .img, .social),
+  h2 {
+    padding: 0 5%;
+  }
+
+  .container > .card {
+    justify-content: center;
+    margin: 20px -12px;
+  }
+
+  .card .cd {
+    width: calc(100% / 2);
+  }
+  .content {
+    width: 340px;
+  }
+
+  .foot {
+    padding: 0;
+  }
+
+  .bigBox {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: calc(100% / 3);
+    padding: 36px 12px 4px;
+  }
+  .foot,
+  .social {
+    margin: 0 1%;
+  }
+  .social {
+    padding: 12px;
+  }
+  .card{
+      max-width: calc(100vw - 17px);
+  }
+}

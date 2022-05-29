@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./style/css/fetch_weatherAPI1.css">
+</head>
+
+<body onload="ShowTime()">
+  <section class="container">
+    <nav>
+      <!-- <div class="hi">今日天氣 <i class="fa-solid fa-cloud-sun-rain"></i><i class="fa-solid fa-radio"></i> : </div> -->
+      <div class="wx_btn">
+        <button class="area all" tabindex="0">全台</button>
+        <button class="area north" tabindex="0">北部</button>
+        <button class="area center" tabindex="0">中部</button>
+        <button class="area south" tabindex="0">南部</button>
+        <button class="area east" tabindex="0">花東</button>
+        <button class="area other" tabindex="0">離島</button>
+      </div>
+      <div id="showbox"></div>
+    </nav>
+    <!-- <div id="map"></div> -->
+    <div class="card-region">
+      <!-- <div class="single-card" tabindex="0">
+        <h3 class="city">樣板</h3>
+        <div class="time">
+          <span class="timeUp">(起)</span> ~
+          <span class="timeEnd">(迄)</span>
+        </div>
+        <img src="./style/img/weather/icon/1.svg" alt="">
+        <div class="weather">天晴</div>
+        <div class="temp">
+          <span class="MT">MT</span> /
+          <span class="mT">mT</span>
+        </div>
+        <div class="comf">
+          <div class="pop"><i class="fa-solid fa-droplet"></i> pop%</div>
+          <div class="CI">CI</div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <script src="./style/js/date&time.js"></script>
+  <!-- <script type="text/javascript" src="./style/js/mapdata.js"></script>
+  <script type="text/javascript" src="./style/js/countrymap.js"></script> -->
+  <script src="./style/js/fetch_weatherAPI.js"></script>
+</body>
+
+</html>
+
+<!-- after -->
+<!-- 地圖區域點擊 -->
+<!-- 翻面後顯示未來12小時天氣 -->
+<!-- 天氣icon=>日/夜,各類天氣歸類判別後配圖 -->

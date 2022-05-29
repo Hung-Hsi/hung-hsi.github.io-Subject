@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f06060;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .level {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      margin: 20px 0;
+    }
+
+    .boxes {
+      width: 500px;
+      height: 500px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 50px;
+      line-height: 500px;
+      color: crimson;
+    }
+
+    .boxes img,
+    .logo img {
+      width: 500px;
+      margin: 50px 0;
+    }
+
+    .box {
+      width: 50%;
+      height: 50%;
+      background-color: green;
+      border: 2px white solid;
+      border-radius: 5px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .time-area {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: space-between;
+    }
+    .btn div{
+      line-height: 50px;
+    }
+    button{
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      color: blue;
+      font-weight: 600;
+      border: 1px dotted white;
+      border-radius: 15px;
+      background-color:sandybrown;
+
+    }
+    .bg-box {
+      background-image: url("https://cdn.hk01.com/di/media/images/cis/5dbfd28f23ab170deb414038.jpg/Fh-s01OJhm-wiimyoto8dtIUzUdQszuCIr0_QiK9P0I?v=w1920");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .none {
+      display: none;
+    }
+    
+    .tittle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 500px;
+      height: 100px;
+      background-color: blanchedalmond;
+      border: 15px solid #ffffff;
+      border-radius: 30px;
+      font-size: 18px;
+    }
+    .tittle h1{
+      margin: 5px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="homepage">
+    <div class="tittle">
+      <h1>彩色識別度測驗</h1>
+      <div>在60秒內，找到不同的顏色</div>
+    </div>
+    <div class="logo">
+      <img
+        src="https://cdn.hk01.com/di/media/images/cis/5dbfd28f23ab170deb414038.jpg/Fh-s01OJhm-wiimyoto8dtIUzUdQszuCIr0_QiK9P0I?v=w1920"
+        alt="" />
+    </div>
+    <div class="btn">
+      <div class=""></div>
+      <div class=""></div>
+      <button class="start-btn">開始答題</button>
+      <button class="continue-btn none">繼續</button>
+      <div>程式設計: 紅腳</div>
+    </div>
+  </section>
+
+  <section class="play-game none">
+    <div class="level"></div>
+    <div class="boxes">
+      <img
+      src="https://cdn.hk01.com/di/media/images/cis/5dbfd28f23ab170deb414038.jpg/Fh-s01OJhm-wiimyoto8dtIUzUdQszuCIr0_QiK9P0I?v=w1920" />
+    </div>
+    <nav>
+      <div class="time-area">
+        <span>時間:</span>
+        <div class="time"></div>
+        <span>S</span>
+      </div>
+      <button class="pause-btn">暫停</button>
+    </nav>
+  </section>
+
+  <script>
+    const homepage = document.querySelector(".homepage");
+    const play_game = document.querySelector(".play-game");
+    const start_btn = document.querySelector(".start-btn");
+    const continue_btn = document.querySelector(".continue-btn");
+    const stopTemp_btn = document.querySelector(".pause-btn");
+
+    const yourtime = 30; 
+    let timeS = document.querySelector(".time");
+
+    let timeId;
+    function countdown() {
+      clearInterval(timeId);
+      timeId = setInterval(function () {
+        if (time == 0) {
+          alert(`恭喜你達到 ${level.innerHTML}`);
+          homepage.classList.remove("none"); 
+          play_game.classList.add("none"); 
+          continue_btn.classList.add("none"); 
+          start_btn.innerHTML = "再玩一次";
+          clearInterval(timeId);
+        } else {
+          time--;
+          timeS.innerHTML = time;
+        }
+      }, 1000);
+    }
+
+
+    start_btn.addEventListener("click", function () {
+      homepage.classList.add("none"); 
+      play_game.classList.remove("none"); 
+      continue_btn.classList.add("none"); 
+      start_btn.innerHTML = "放棄重玩";
+      time = yourtime;
+      timeS.innerHTML = time;
+      countdown();
+      colorgames();
+    });
+
+    stopTemp_btn.addEventListener("click", function () {
+      homepage.classList.remove("none");
+      play_game.classList.add("none"); 
+      continue_btn.classList.remove("none");
+      clearInterval(timeId);
+    });
+
+    continue_btn.addEventListener("click", function () {
+      homepage.classList.add("none"); 
+      play_game.classList.remove("none"); 
+      countdown(); 
+    });
+  </script>
+  <script>
+    const bigBox = document.querySelector(".boxes");
+    let level = document.querySelector(".level");
+
+    boxLine = 2;
+
+    let answer;
+    let answerBox;
+    let lv = 1;
+    count = 0;
+    let nlevel = 1;
+
+    function colorgames() {
+      boxLine = 1 + lv;
+      level.innerHTML = "level : " + nlevel;
+
+      let size = 100 / boxLine + "%";
+
+      let color = `rgb(${Math.floor(Math.random() * 240) + 10},${Math.floor(Math.random() * 240) + 10
+        },${Math.floor(Math.random() * 240) + 10})`;
+
+      bigBox.innerHTML = "";
+
+      for (let i = 0; i < boxLine ** 2; i++) {
+        bigBox.innerHTML += `<div class="box" style="width:${size};height:${size};background-color: ${color} ;"></div>`;
+      }
+
+      answer = Math.floor(Math.random() * boxLine ** 2) + 1;
+
+      answerBox = document.querySelector(`.boxes .box:nth-child(${answer})`);
+      answerBox.classList.add("answerBox");
+      answerBox.style.opacity = `${0.5 + nlevel * 0.01}`;
+
+      answerBox.addEventListener("click", () => {
+        nlevel++;
+        count++;
+        if (count == lv) {
+          lv++;
+          count = 0;
+        }
+
+        colorgames();
+      });
+    }
+  </script>
+</body>
+
+</html>

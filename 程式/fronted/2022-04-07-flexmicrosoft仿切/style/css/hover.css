@@ -1,0 +1,38 @@
+.bnta:hover .fa-angle-right {
+    margin-left: 10px;
+    transition: .5s;
+}
+.bnta:hover .bnt {
+    padding: 8px 18px;
+    transition: .5s;
+    /* background-color: aliceblue; */
+}
+.bnta:hover .bnt1 {
+    padding: 8px 18px;
+    transition: .5s;
+    /* background-color: aliceblue; */
+}
+
+.cd-btn:hover .fa-angle-right {
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.cd:hover img {
+    opacity: 0.85;
+}
+
+.list::before {
+    display: none;
+}
+
+.list:hover::before {
+    display: unset;
+}
+.pd>li:hover .wd {
+    text-decoration:underline;
+    /* display: none; */
+}
+.container1 .nav .suo:hover ul{
+    display: unset;
+} 

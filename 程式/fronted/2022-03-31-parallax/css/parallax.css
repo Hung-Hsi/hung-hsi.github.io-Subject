@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  /* height: 10vh; */
+  /* background-color: gray; */
+  /* float: right; */
+  position: fixed;
+  left: 0%;
+  z-index: 3;
+}
+
+.a:hover {
+  background-color: azure;
+}
+
+.bgi {
+  width: calc(100vw - 17px);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.text {
+  width: 400px;
+  height: 100px;
+  border: 1px solid none;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 100px;
+  opacity: 0.9;
+  font-family: "Press Start 2P", "Noto Serif TC", serif, cursive;
+}
+
+.words {
+  /* height: 30vh; */
+  width: calc(100vw - 17px);
+  text-align: center;
+  /* line-height: 30vh; */
+  /* border: 1px solid black; */
+  background-color: burlywood;
+  /* color: dimgrey; */
+  padding: 40px 80px;
+}
+
+.words > .tittle {
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Noto Serif TC", serif;
+}
+
+.words > .content {
+  text-align: justify;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+.bgi-full.bgi {
+  height: auto;
+  /* background-color: antiquewhite; */
+  background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202010/2122/3YVZFeHkbYNtHBgwAjIAD47v.png);
+  /* position: relative; */
+  background-attachment: fixed;
+}
+
+.bgi-full1 {
+  background-color: none;
+  /* background-image: url(https://image.api.playstation.com/vulcan/img/rnd/202010/2122/3YVZFeHkbYNtHBgwAjIAD47v.png); */
+  /* position: relative; */
+  background-attachment: fixed;
+}
+
+.bgi-full1 > h1 {
+  background-color: rgb(128, 94, 43);
+  color: rgb(27, 52, 59);
+}
+
+.bgi-full2 {
+  /* background-color: gainsboro; */
+  background-image: url(https://img.technews.tw/wp-content/uploads/2019/05/09163621/image.jpeg);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bgi-full2 > h1 {
+  background-color: rgb(148, 148, 148);
+  color: rgb(240, 255, 104);
+}
+
+.bgi-full3 {
+  /* background-color: grey; */
+  background-image: url(https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2019/12/minecraft-village-pillage.jpg);
+  background-attachment: fixed;
+}
+
+.bgi-full3 > h1 {
+  background-color: rgb(255, 164, 164);
+  color: rgb(255, 255, 255);
+}
+
+.bgi-full4 {
+  /* background-color: grey; */
+  background-image: url(https://cdn.thetealmango.com/wp-content/uploads/2021/12/minecraft-2.jpg);
+  background-attachment: fixed;
+}
+
+.bgi-full4 > h1 {
+  background-color: rgb(188, 199, 252);
+  color: rgb(255, 116, 116);
+}
+
+.bgi-full5 {
+  background: none;
+  background-color: none;
+  color: none;
+  /* background-image: url(https://cdn.thetealmango.com/wp-content/uploads/2021/12/minecraft-2.jpg); */
+  background-attachment: fixed;
+}
+
+.bgi-full5 > h1 {
+  background-color: rgb(158, 202, 219);
+  color: rgb(0, 0, 0);
+}
+
+li {
+  display: inline-block;
+  /* padding: 20px;    */
+}
+
+.a {
+  display: inline-block;
+  background-color: rgb(162, 170, 185);
+  color: black;
+  padding: 30px;
+  height: 20px;
+  text-align: center;
+  line-height: 5px;
+  border-radius: 5px;
+}
+
+.img {
+  /* float: right; */
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+  transform: translate(10%, 50%);
+  transform: scale(80%);
+}
+
+.img:hover {
+  transform: translate(0%, 0%);
+  transition-duration: 1s;
+}

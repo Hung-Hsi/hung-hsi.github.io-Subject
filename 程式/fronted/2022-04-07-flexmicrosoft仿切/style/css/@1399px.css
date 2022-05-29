@@ -1,0 +1,21 @@
+@media screen and (max-width:1399px) {
+   .sign-in>li>a>.user{
+       display: none;
+   }
+   .microsoft-list{
+    width: calc(90%);
+    right:unset;
+    left: 2%;
+}
+.sign-in li:first-child{
+    margin-right: 30px;
+}
+.sign-in li{
+    padding: 16px 5px;
+}
+}
+@media screen and (max-width:1398px) {
+    .sign-in>li>a>.user1{
+        display: none;
+    }
+}
