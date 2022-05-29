@@ -5,6 +5,9 @@
     html {
         font-family: "Segoe UI", SegoeUI, "Microsoft JhengHei", 微軟正黑體,
             "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: no-repeat center/cover url(../img/bgi.jpg);
+        height: auto;
+        background-attachment: fixed;
     }
 
     body,
@@ -15,14 +18,86 @@
     }
 
     main {
+
         #future {
             .banner {
-                background: no-repeat center/cover url(../img/bgi.jpg);
+                background: no-repeat center/cover url(../img/42642380602_5d4084c927_o.jpg);
+                height: auto;
+                background-attachment: fixed;
+
                 //  opacity: .8;
-                .d-bg{
+                .d-bg {
                     border-radius: 20px;
-                    background-color: rgba(158, 146, 146, 0.25);
+                    background-color: rgba(158, 146, 146, 0.2);
                 }
+            }
+        }
+
+        .blog {
+            // .skill {
+            //     background: no-repeat center/cover url(../img/1.jpg);
+            //     height: auto;
+            //     background-attachment: fixed;
+            // }
+
+            .bg-border {
+                background: no-repeat top/cover url(../img/1.jpg);
+                height: auto;
+                background-attachment: fixed;
+            }
+
+            // .story {
+            //     background: no-repeat top/cover url(../img/1.jpg);
+            //     height: auto;
+            //     background-attachment: fixed;
+            // }
+        }
+
+        .btn {
+              position: relative;
+            width: 84px;
+            height: 84px;
+            color: #fff;
+            background-color: #00a002;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+            font-size: 20px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 2px solid rgba(0, 0, 0, .5);
+                /*     transform-origin: center; */
+                box-sizing: border-box;
+                z-index: -1;
+            }
+
+            /* &::after {
+            transition-delay: 2s;
+        } */
+
+            &:hover::before,
+            &:hover::after {
+                border-color: transparent;
+                filter: blur(2px);
+            }
+
+            &:hover::before {
+                transform: scale(3);
+                transition: 1s transform ease, 2s blur ease, .8s border-color ease;
+            }
+
+            &:hover::after {
+                transform: scale(2);
+                transition: 1s transform ease, 2s blur ease, .8s border-color ease;
             }
         }
     }

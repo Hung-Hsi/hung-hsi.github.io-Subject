@@ -7,15 +7,71 @@
       -ms-user-select: none;
           user-select: none; }
   * html {
-    font-family: "Segoe UI", SegoeUI, "Microsoft JhengHei", 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Segoe UI", SegoeUI, "Microsoft JhengHei", 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: no-repeat center/cover url(../img/bgi.jpg);
+    height: auto;
+    background-attachment: fixed; }
   * body,
   * ul {
     margin: 0;
     padding: 0;
     font-size: 15px; }
   * main #future .banner {
-    background: no-repeat center/cover url(../img/bgi.jpg); }
+    background: no-repeat center/cover url(../img/42642380602_5d4084c927_o.jpg);
+    height: auto;
+    background-attachment: fixed; }
     * main #future .banner .d-bg {
       border-radius: 20px;
-      background-color: rgba(158, 146, 146, 0.25); }
+      background-color: rgba(158, 146, 146, 0.2); }
+  * main .blog .bg-border {
+    background: no-repeat top/cover url(../img/1.jpg);
+    height: auto;
+    background-attachment: fixed; }
+  * main .btn {
+    position: relative;
+    width: 84px;
+    height: 84px;
+    color: #fff;
+    background-color: #00a002;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    /* &::after {
+            transition-delay: 2s;
+        } */ }
+    * main .btn::before, * main .btn::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      /*     transform-origin: center; */
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      z-index: -1; }
+    * main .btn:hover::before, * main .btn:hover::after {
+      border-color: transparent;
+      -webkit-filter: blur(2px);
+              filter: blur(2px); }
+    * main .btn:hover::before {
+      -webkit-transform: scale(3);
+              transform: scale(3);
+      -webkit-transition: 2s blur ease, .8s border-color ease, 1s -webkit-transform ease;
+      transition: 2s blur ease, .8s border-color ease, 1s -webkit-transform ease;
+      transition: 1s transform ease, 2s blur ease, .8s border-color ease;
+      transition: 1s transform ease, 2s blur ease, .8s border-color ease, 1s -webkit-transform ease; }
+    * main .btn:hover::after {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-transition: 2s blur ease, .8s border-color ease, 1s -webkit-transform ease;
+      transition: 2s blur ease, .8s border-color ease, 1s -webkit-transform ease;
+      transition: 1s transform ease, 2s blur ease, .8s border-color ease;
+      transition: 1s transform ease, 2s blur ease, .8s border-color ease, 1s -webkit-transform ease; }
 /*# sourceMappingURL=index.css.map */
