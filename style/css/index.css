@@ -1,3 +1,21 @@
-main .future .banner {
-  background: no-repeat center/cover url(../img/bgi.jpg); }
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  * html {
+    font-family: "Segoe UI", SegoeUI, "Microsoft JhengHei", 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  * body,
+  * ul {
+    margin: 0;
+    padding: 0;
+    font-size: 15px; }
+  * main .future .banner {
+    background: no-repeat center/cover url(../img/bgi.jpg); }
+    * main .future .banner .d-bg {
+      border-radius: 20px;
+      background-color: rgba(158, 146, 146, 0.2); }
 /*# sourceMappingURL=index.css.map */
