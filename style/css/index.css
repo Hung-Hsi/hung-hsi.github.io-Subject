@@ -33,28 +33,41 @@ body main .project-bd:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1); }
 
-body main .bg-border1 {
+body main #photoshop .bg-border-ps1 {
+  background: no-repeat center/contain url("../img/PS/21-張鴻檄-蘋果.jpg"); }
+
+body main #photoshop .bg-border-ps2 {
+  background: no-repeat center/contain url("../img/PS/21-張鴻檄-聖誕球.jpg"); }
+
+body main #photoshop .bg-border-ps3 {
+  background: no-repeat center/contain url("../img/PS/21-張鴻檄-色溫練習2.jpg"); }
+
+body main #photoshop .bg-border-ps4 {
+  background: no-repeat center/contain url("../img/PS/21-張鴻檄-婚紗修圖2.jpg"); }
+
+body main #illustrator .bg-border-ai1 {
   background: no-repeat center/contain url("../img/AI/21-張鴻檄-小雨傘.jpg"); }
 
-body main .bg-border2 {
+body main #illustrator .bg-border-ai2 {
   background: no-repeat center/contain url("../img/AI/21-張鴻檄-小月亮2.png"); }
 
-body main .bg-border3 {
+body main #illustrator .bg-border-ai3 {
   background: no-repeat center/contain url("../img/AI/21-張鴻檄-pentool.jpg"); }
 
-body main .bg-border4 {
+body main #illustrator .bg-border-ai4 {
   background: no-repeat center/contain url("../img/AI/21-張鴻檄-LowPoly-自畫像.jpg"); }
 
 body main .btn {
   position: relative;
-  width: 84px;
-  height: 84px;
+  width: 50px;
+  height: 50px;
   color: #fff;
   background-color: #5c5c5c;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 35px;
   cursor: pointer;
   outline: none;
   border: none;
@@ -66,8 +79,8 @@ body main .btn {
     position: absolute;
     top: 2px;
     left: 2px;
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.5);
     /*     transform-origin: center; */

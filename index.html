@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogle's subject</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style/css/lightBox/lightbox.min.css">
     <link rel="stylesheet" href="./style/css/index.css" />
     <style>
 
@@ -46,8 +48,8 @@
     </header>
     <main>
         <section id="future">
-            <div class="container-fluid pt-5">
-                <div class="banner mt-4 p-4 p-md-5 text-white rounded bg-dark">
+            <div class="container-fluid pt-5 banner ">
+                <div class="mt-4 p-4 p-md-5 text-white rounded bg-none">
                     <div class="col-md-6 px-1 py-3 d-bg">
                         <h4 class="font-weight-bold">
                             不管想得再遠，踏出去的那一步，腳下踩的才是道路
@@ -65,190 +67,313 @@
             <div role="main" class="container-fluid mt-5">
                 <div class="row">
                     <div class="col-md-8 blog-main">
-                        <div class="blog-post p-5 skill text-dark">
-                            <h3>Fronted-End Skill</h3>
-                            <hr>
-                            <h4>HTML,CSS,Sass/SCSS</h4>
-                            <ul>
-                                <li>網頁切版</li>
-                                <li>RWD</li>
-                            </ul>
-                            <br>
-                            <h4>Javascript</h4>
-                            <p></p>
-                            <ul>
-                                <li>Fetch API</li>
-                                <li>Vue.js</li>
-                                <li>bootstrap</li>
+                        <!-- 技能 -->
+                        <div class="skill row pl-4">
+                            <div class="col-md-6 blog-post p-5 skill text-dark">
+                                <h4>Fronted-End Skill</h4>
+                                <hr>
+                                <h5>HTML,CSS,Sass/SCSS</h5>
+                                <ul>
+                                    <li>網頁切版</li>
+                                    <li>RWD</li>
+                                </ul>
+                                <br>
+                                <h5>Javascript</h5>
+                                <p></p>
+                                <ul>
+                                    <li>Fetch API</li>
+                                    <li>Vue.js</li>
+                                    <li>bootstrap</li>
+                                </ul>
+
+                            </div>
+                            <div class="col-md-6 blog-post p-5 skill text-dark">
+                                <h4>Other Skill</h4>
+                                <hr>
+                                <h5>Photoshop</h5>
+                                <ul>
+                                    <li>圖像處理</li>
+                                    <li>調色編修</li>
+                                </ul>
+                                <br>
+                                <h5>Illustrator</h5>
+                                <p></p>
+                                <ul>
+                                    <li>icon製作</li>
+                                    <li>鋼筆工具繪圖</li>
+                                    <li>Low poly繪圖</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- 作品 -->
+                        <div id="subject" class="container py-5 my-5 pl-5">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="fronted-tab" data-toggle="tab" href="#fronted"
+                                        role="tab" aria-controls="fronted" aria-selected="true">切版</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="JS-tab" data-toggle="tab" href="#JS" role="tab"
+                                        aria-controls="JS" aria-selected="false">JS</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="PS-tab" data-toggle="tab" href="#PS" role="tab"
+                                        aria-controls="PS" aria-selected="false">PS</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="AI-tab" data-toggle="tab" href="#AI" role="tab"
+                                        aria-controls="AI" aria-selected="false">AI</a>
+                                </li>
                             </ul>
 
-                        </div>
-                        <div id="html" class="row mb-2 mt-5">
-                            <div class="project-bd col-md-6">
-                                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">微軟仿切</h5>
-                                        <div class="mb-1 text-muted">Apr 7</div>
-                                        <p class="mb-auto">
-                                            運用flex的方式進行切版，包含微軟首頁RWD及、手刻Navbar
-                                        </p>
-                                        <br />
-                                        <a href="./程式/fronted/2022-04-07-flexmicrosoft仿切/microsoft.html"
-                                            class="stretched-link"></a>
-                                    </div>
-                                    <div class="col-auto d-none d-lg-block"></div>
-                                </div>
-                            </div>
-                            <div class="project-bd col-md-6">
-                                <div
-                                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">數位方塊仿切</h5>
-                                        <div class="mb-1 text-muted">May 30</div>
-                                        <p class="mb-auto">
-                                            套用Bootstrap進行切版，包含首頁、登入頁，及購物車頁面RWD
-                                        </p>
-                                        <br />
-                                        <a href="./程式/fronted/bootstrap-數位方塊仿切/bootstrap-hw-index.html"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="Javascrip" class="row mb-2 mt-5">
-                            <div class="project-bd col-md-4">
-                                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">色弱遊戲</h5>
-                                        <div class="mb-1 text-muted">Apr 22</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./程式/fronted/js/色弱遊戲/colorGame-ls.html"
-                                            class="stretched-link"></a>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="fronted" role="tabpanel"
+                                    aria-labelledby="fronted-tab">
+                                    <div id="html" class="row mb-2 mt-5">
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">微軟仿切</h5>
+                                                    <div class="mb-1 text-muted">Apr 7</div>
+                                                    <p class="mb-auto">
+                                                        運用flex的方式進行切版，包含微軟首頁RWD及、手刻Navbar
+                                                    </p>
+                                                    <br />
+                                                    <a href="./程式/fronted/2022-04-07-flexmicrosoft仿切/microsoft.html"
+                                                        target="_blank" class="stretched-link"></a>
+                                                </div>
+                                                <div class="col-auto d-none d-lg-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">數位方塊仿切</h5>
+                                                    <div class="mb-1 text-muted">May 30</div>
+                                                    <p class="mb-auto">
+                                                        套用Bootstrap進行切版，包含首頁、登入頁，及購物車頁面RWD
+                                                    </p>
+                                                    <br />
+                                                    <a href="./程式/fronted/bootstrap-數位方塊仿切/bootstrap-hw-index.html"
+                                                        target="_blank" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="project-bd col-md-4">
-                                <div
-                                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">骰子遊戲</h5>
-                                        <div class="mb-1 text-muted">Apr 25</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./程式/fronted/js/骰子遊戲/dicegame2.html"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-bd col-md-4">
-                                <div
-                                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">天氣小卡</h5>
-                                        <div class="mb-1 text-muted">Apr 27</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./程式/fronted/js/API-天氣小卡/fetch-weather-ls.html"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-post p-5 skill text-dark">
-                            <h3>Other Skill</h3>
-                            <hr>
-                            <h4>Photoshop</h4>
-                            <ul>
-                                <li>圖像處理</li>
-                                <li>調色編修</li>
-                            </ul>
-                            <br>
-                            <h4>Illustrator</h4>
-                            <p></p>
-                            <ul>
-                                <li>icon製作</li>
-                                <li>鋼筆工具繪圖</li>
-                                <li>Low poly繪圖</li>
-                            </ul>
+                                <div class="tab-pane fade" id="JS" role="tabpanel" aria-labelledby="JS-tab">
+                                    <div id="Javascrip" class="row mb-2 mt-5">
+                                        <div class="project-bd col-md-4">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">色弱遊戲</h5>
+                                                    <div class="mb-1 text-muted">Apr 22</div>
+                                                    <p class="mb-auto">
 
+                                                    </p>
+                                                    <br />
+                                                    <a href="./程式/fronted/js/色弱遊戲/colorGame-ls.html" target="_blank"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-4">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">骰子遊戲</h5>
+                                                    <div class="mb-1 text-muted">Apr 25</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./程式/fronted/js/骰子遊戲/dicegame2.html" target="_blank"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-4">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">天氣小卡</h5>
+                                                    <div class="mb-1 text-muted">Apr 27</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./程式/fronted/js/API-天氣小卡/fetch-weather-ls.html"
+                                                        target="_blank" class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="PS" role="tabpanel" aria-labelledby="PS-tab">
+                                    <div id="photoshop" class="row mb-2 mt-5">
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ps1">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">套索工具</h5>
+                                                    <div class="mb-1 text-muted">Mar 17</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/PS/01-PS關鍵核心/21-張鴻檄-Apple .jpg" class="stretched-link"
+                                                        data-lightbox="photoshop" data-title="Apple"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ps2">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">套索工具</h5>
+                                                    <div class="mb-1 text-muted">Mar 17</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/PS/01-PS關鍵核心/21-張鴻檄-聖誕球.jpg" class="stretched-link"
+                                                        data-lightbox="photoshop" data-title="聖誕球"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ps3">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">色溫練習</h5>
+                                                    <div class="mb-1 text-muted">Mar 18</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/PS/05-色溫練習/21-張鴻檄-色溫練習2.jpg" class="stretched-link"
+                                                        data-lightbox="photoshop" data-title="色溫練習"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ps4">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">婚紗修圖</h5>
+                                                    <div class="mb-1 text-muted">Mar 27</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/PS/03-婚紗修圖/21-張鴻檄-婚紗修圖2.jpg" class="stretched-link"
+                                                        data-lightbox="photoshop" data-title="婚紗修圖"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="AI" role="tabpanel" aria-labelledby="AI-tab">
+                                    <div id="illustrator" class="row mb-2 mt-5">
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai1">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">icon製作</h5>
+                                                    <div class="mb-1 text-muted">Mar 21</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/AI/21-張鴻檄-小雨傘.jpg" class="stretched-link"
+                                                        class="stretched-link" data-lightbox="illustrator"
+                                                        data-title="小雨傘icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai2">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">icon製作</h5>
+                                                    <div class="mb-1 text-muted">Mar 22</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/AI/21-張鴻檄-小月亮2.png" class="stretched-link"
+                                                        data-lightbox="illustrator" data-title="小月亮icon"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai3">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">鋼筆工具繪圖</h5>
+                                                    <div class="mb-1 text-muted">Mar 18</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/AI/21-張鴻檄-pentool.jpg" class="stretched-link"
+                                                        data-lightbox="illustrator" data-title="pentool卡比獸"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="project-bd col-md-6">
+                                            <div
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai4">
+                                                <div class="col p-4 d-flex flex-column position-static">
+                                                    <strong class="d-inline-block mb-2 text-warning">demo</strong>
+                                                    <h5 class="mb-0">Low poly繪圖</h5>
+                                                    <div class="mb-1 text-muted">Mar 27</div>
+                                                    <p class="mb-auto">
+
+                                                    </p>
+                                                    <br />
+                                                    <a href="./設計/AI/21-張鴻檄-LowPoly-自畫像.jpg" class="stretched-link"
+                                                        data-lightbox="illustrator" data-title="lowpoly自畫像"
+                                                        class="stretched-link"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="Javascript" class="row mb-2 mt-5">
-                            <div class="project-bd col-md-6">
-                                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border1">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">icon製作</h5>
-                                        <div class="mb-1 text-muted">Mar 21</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./設計/AI/21-張鴻檄-小雨傘.jpg"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-bd col-md-6">
-                                <div
-                                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border2">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">icon製作</h5>
-                                        <div class="mb-1 text-muted">Mar 22</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./設計/AI/21-張鴻檄-小月亮2.png"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-bd col-md-6">
-                                <div
-                                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border3">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">鋼筆工具繪圖</h5>
-                                        <div class="mb-1 text-muted">Mar 26</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./設計/AI/21-張鴻檄-pen tool.jpg"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-bd col-md-6">
-                                <div
-                                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border4">
-                                    <div class="col p-4 d-flex flex-column position-static">
-                                        <strong class="d-inline-block mb-2 text-warning">demo</strong>
-                                        <h5 class="mb-0">Low poly繪圖</h5>
-                                        <div class="mb-1 text-muted">Mar 27</div>
-                                        <p class="mb-auto">
-                                            
-                                        </p>
-                                        <br />
-                                        <a href="./設計/AI/21-張鴻檄-Low Poly-自畫像.jpg"
-                                            class="stretched-link"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
+
+
+
+
 
                         <div class="row mb-2 mt-5 p-5 story">
                             <h3 class="pb-4 mb-4 font-italic border-bottom">
@@ -265,20 +390,20 @@
                                     <strong>企劃</strong>、<strong>設計</strong>、<strong>程式</strong>。
                                 </p>
                                 <hr />
-                                    <p class="pl-1">
-                                        最開始學到的是企劃的能力，我認為這是對於內容產出工作所需最重要的能力之一
-                                        ;
-                                        在這邊我學到一個網站主題的發想，從心智圖開始，然後流程圖再到網站地圖。
-                                        <br />
-                                        在課程最後的團體專題，我也擔任團隊裡的企劃，完成了一件project。
-                                    </p>
-                                    <p class="pl-1">
-                                        企劃之後學會的是photoshop、illustrator等圖像編輯軟體，完成基本的圖像後製以及icon素材製作，而後也完成了Low-poly風格的自畫像project。
-                                    </p>
-                                    <p class="pl-1">
-                                        最後進到前端的課程，從HTML,CSS開始學會切版，再到Javascrip學會API如何做fetch，然後學習Bootstrap網站架構的套件使用。<br />期間完成了微軟首頁仿切、Bootstrap套版仿切的projects。
-                                    </p>
-                                    <hr>
+                                <p class="pl-1">
+                                    最開始學到的是企劃的能力，我認為這是對於內容產出工作所需最重要的能力之一
+                                    ;
+                                    在這邊我學到一個網站主題的發想，從心智圖開始，然後流程圖再到網站地圖。
+                                    <br />
+                                    在課程最後的團體專題，我也擔任團隊裡的企劃，完成了一件project。
+                                </p>
+                                <p class="pl-1">
+                                    企劃之後學會的是photoshop、illustrator等圖像編輯軟體，完成基本的圖像後製以及icon素材製作，而後也完成了Low-poly風格的自畫像project。
+                                </p>
+                                <p class="pl-1">
+                                    最後進到前端的課程，從HTML,CSS開始學會切版，再到Javascrip學會API如何做fetch，然後學習Bootstrap網站架構的套件使用。<br />期間完成了微軟首頁仿切、Bootstrap套版仿切的projects。
+                                </p>
+                                <hr>
                             </div>
 
                         </div>
@@ -311,7 +436,7 @@
                 </div>
                 <!-- /.row -->
                 <nav class="blog-pagination row justify-content-center">
-                    <a class="btn btn-outline-primary" href="#">Back to top</a>
+                    <a class="btn btn-outline-primary" href="#"><i class="bi bi-capslock-fill"></i></a>
                 </nav>
             </div>
         </section>
@@ -322,9 +447,12 @@
             Jogle's Portfolio © 2022 Copyright
         </p>
     </footer>
-
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- lightbox -->
+    <!-- <script src="./style/js/lightBox/lightbox.js"></script> -->
+    <script src="./style/js/lightBox/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
