@@ -29,7 +29,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#future">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subject">Subject</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-expanded="false">
                             Subject
@@ -38,7 +41,7 @@
                             <a class="dropdown-item" href="#">切版</a>
                             <a class="dropdown-item" href="#Javascrip">Javascrip</a>
                         </div>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">content</a>
                     </li>
@@ -66,10 +69,10 @@
         <section class="blog">
             <div role="main" class="container-fluid mt-5">
                 <div class="row">
-                    <div class="col-md-8 blog-main">
+                    <div class="col-md-9 blog-main">
                         <!-- 技能 -->
-                        <div class="skill row pl-4">
-                            <div class="col-md-6 blog-post p-5 skill text-dark">
+                        <div class="skill row pl-4 ml-5">
+                            <div class=" col-md-6 blog-post p-5 skill text-dark">
                                 <h4>Fronted-End Skill</h4>
                                 <hr>
                                 <h5>HTML,CSS,Sass/SCSS</h5>
@@ -87,7 +90,7 @@
                                 </ul>
 
                             </div>
-                            <div class="col-md-6 blog-post p-5 skill text-dark">
+                            <div class=" col-md-6 blog-post p-5 skill text-dark">
                                 <h4>Other Skill</h4>
                                 <hr>
                                 <h5>Photoshop</h5>
@@ -107,7 +110,7 @@
                             </div>
                         </div>
                         <!-- 作品 -->
-                        <div id="subject" class="container py-5 my-5 pl-5">
+                        <div id="subject" class="container my-5 ml-3 pl-5">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link active" id="fronted-tab" data-toggle="tab" href="#fronted"
@@ -156,7 +159,7 @@
                                                     <h5 class="mb-0">數位方塊仿切</h5>
                                                     <div class="mb-1 text-muted">May 30</div>
                                                     <p class="mb-auto">
-                                                        套用Bootstrap進行切版，包含首頁、登入頁，及購物車頁面RWD
+                                                        套用Bootstrap切版，包含首頁、登入頁，購物車頁面RWD
                                                     </p>
                                                     <br />
                                                     <a href="./程式/fronted/bootstrap-數位方塊仿切/bootstrap-hw-index.html"
@@ -294,7 +297,7 @@
                                     <div id="illustrator" class="row mb-2 mt-5">
                                         <div class="project-bd col-md-6">
                                             <div
-                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai1">
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai-1">
                                                 <div class="col p-4 d-flex flex-column position-static">
                                                     <strong class="d-inline-block mb-2 text-warning">demo</strong>
                                                     <h5 class="mb-0">icon製作</h5>
@@ -311,7 +314,7 @@
                                         </div>
                                         <div class="project-bd col-md-6">
                                             <div
-                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai2">
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai-2">
                                                 <div class="col p-4 d-flex flex-column position-static">
                                                     <strong class="d-inline-block mb-2 text-warning">demo</strong>
                                                     <h5 class="mb-0">icon製作</h5>
@@ -328,7 +331,7 @@
                                         </div>
                                         <div class="project-bd col-md-6">
                                             <div
-                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai3">
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai-3">
                                                 <div class="col p-4 d-flex flex-column position-static">
                                                     <strong class="d-inline-block mb-2 text-warning">demo</strong>
                                                     <h5 class="mb-0">鋼筆工具繪圖</h5>
@@ -345,7 +348,7 @@
                                         </div>
                                         <div class="project-bd col-md-6">
                                             <div
-                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai4">
+                                                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-border-ai-4">
                                                 <div class="col p-4 d-flex flex-column position-static">
                                                     <strong class="d-inline-block mb-2 text-warning">demo</strong>
                                                     <h5 class="mb-0">Low poly繪圖</h5>
@@ -367,15 +370,7 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
-
-
-                        <div class="row mb-2 mt-5 p-5 story">
+                        <div class="row mb-2 mt-5 ml-5 p-5 story">
                             <h3 class="pb-4 mb-4 font-italic border-bottom">
                                 At the beginning of fronted
                             </h3>
@@ -411,14 +406,16 @@
                     </div>
                     <!-- /.blog-main -->
 
-                    <aside class="col-md-4 blog-sidebar ">
+                    <aside class="col-md-3 blog-sidebar">
+                        <div class="img-border">
+                        <img style="width: 100px;" src="./style/img/IMG_0752Q.png" alt="">
+                        </div>
                         <div id="about" class="p-4 mb-3 bg-light rounded">
                             <h4 class="font-italic">About me</h4>
                             <p class="mb-0">
                                 非資訊本科出身，生物相關背景，對科學的領域有濃厚的興趣，因此對資訊程式方面抱有嚮往，但因為以前沒接觸過程式，所以正在從頭學習。
                             </p>
                         </div>
-
                         <div class="p-4">
                             <h4 class="font-italic">Elsewhere</h4>
                             <ol class="list-unstyled">
@@ -431,6 +428,7 @@
                                 </li>
                             </ol>
                         </div>
+
                     </aside>
                     <!-- /.blog-sidebar -->
                 </div>

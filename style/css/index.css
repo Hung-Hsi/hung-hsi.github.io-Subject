@@ -57,6 +57,20 @@ body main #illustrator .bg-border-ai3 {
 body main #illustrator .bg-border-ai4 {
   background: no-repeat center/contain url("../img/AI/21-張鴻檄-LowPoly-自畫像.jpg"); }
 
+body main .img-border {
+  width: 130px;
+  height: 130px;
+  border: 0px solid #000;
+  background-color: rgba(250, 243, 178, 0.5);
+  border-radius: 50%;
+  position: relative; }
+  body main .img-border img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
 body main .btn {
   position: relative;
   width: 50px;

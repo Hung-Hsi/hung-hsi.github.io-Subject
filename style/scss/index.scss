@@ -102,6 +102,21 @@ body {
             }
         }
 
+        .img-border {
+            width: 130px;
+            height: 130px;
+            border: 0px solid #000;
+            background-color: rgba(250, 243, 178, 0.5);
+            border-radius: 50%;
+            position: relative;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
         .btn {
             position: relative;
             // right: 0;
